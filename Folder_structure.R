@@ -4,7 +4,8 @@
 ##
 ## Project: GPE_RF_2025_Indicators
 ##
-## Purpose of script: Create folder structure and templates for GPE RF          ##                     indicators
+## Purpose of script: Create folder structure and templates for GPE RF          
+##                     indicators
 ##
 ## Author: Andrei Wong Espejo
 ##
@@ -14,7 +15,8 @@
 ##
 ## ---------------------------
 ##
-## Notes: Place and run script in folder where you want to create folder        ##         structure and templates
+## Notes: Place and run script in folder where you want to create folder        
+##         structure and templates
 ##   
 ##
 ## ---------------------------
