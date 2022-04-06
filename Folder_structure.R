@@ -74,13 +74,16 @@ folder_structure <- (
     "Indicator_3i/Base_2020",
     "Indicator_3ii/Base_2020",
     "Indicator_4i/Base_2020",
+    "Indicator_4iia_5iia,c_8iia,c_8iiia/CY_2021",
     "Indicator_5i/Base_2020",
     "Indicator_6/Base_2020",
     "Indicator_7i/Base_2020",
     "Indicator_8i/Base_2020",
-    "Indicator_8iiic/Base_2020",
-    "Indicator_12i/Base_2020",
-    "Indicator_12ii/Base_2020"
+    "Indicator_8iiic/CY_2021",
+    "Indicator_8iiic/CY_2022",    
+    "Indicator_12i_12ii/Base_2020",
+    "Indicator_12i_12ii/FY_2021",
+    "Indicator_12i_12ii/FY_2022"
   ))
 
 for (j in seq_along(folder_structure)) {
@@ -164,119 +167,119 @@ admin_data_db <- data.frame(
   stringsAsFactors = FALSE,
   country = c(
     "Afghanistan", "Albania",
-    "Bangladesh", "Benin", "Bhutan", "BurkinaFaso",
-    "Burundi", "CaboVerde", "Cambodia",
-    "Cameroon", "CentralAfricanRepublic",
+    "Bangladesh", "Benin", "Bhutan", "Burkina Faso",
+    "Burundi", "Cabo Verde", "Cambodia",
+    "Cameroon", "Central African Republic",
     "Chad", "Comoros",
-    "Congo,DemocraticRepublicof", "Congo,Republicof",
+    "Congo,Democratic Republic of", "Congo,Republic of",
     "Coted'Ivoire", "Djibouti", "Dominica", "Eritrea",
-    "Ethiopia", "Gambia,The", "Georgia",
+    "Ethiopia", "Gambia, The", "Georgia",
     "Ghana", "Grenada", "Guinea",
     "Guinea-Bissau", "Guyana", "Haiti", "Honduras",
-    "Kenya", "Kiribati", "KyrgyzRepublic",
-    "LaoPeople'sDemocraticRepublic",
+    "Kenya", "Kiribati", "Kyrgyz Republic",
+    "LaoPeople's Democratic Republic",
     "Lesotho", "Liberia", "Madagascar", "Malawi",
-    "Maldives", "Mali", "MarshallIslands",
+    "Maldives", "Mali", "Marshall Islands",
     "Mauritania",
-    "Micronesia,FederatedStatesof", "Moldova", "Mongolia",
+    "Micronesia, Federated States of", "Moldova", "Mongolia",
     "Mozambique", "Myanmar", "Nepal", "Nicaragua",
     "Niger", "Nigeria", "Pakistan",
-    "PapuaNewGuinea", "Rwanda", "Samoa",
-    "SaoTomeandPrincipe", "Senegal", "SierraLeone",
-    "SolomonIslands", "Somalia",
-    "SouthSudan", "St.Lucia",
-    "St.VincentandtheGrenadines", "Sudan", "Tajikistan",
+    "Papua New Guinea", "Rwanda", "Samoa",
+    "SaoTome and Principe", "Senegal", "Sierra Leone",
+    "Solomon Islands", "Somalia",
+    "South Sudan", "St.Lucia",
+    "St.Vincent and the Grenadines", "Sudan", "Tajikistan",
     "Tanzania", "Timor-Leste", "Togo", "Tonga",
     "Tuvalu", "Uganda", "Uzbekistan",
-    "Vanuatu", "Vietnam", "Yemen,Republicof",
+    "Vanuatu", "Vietnam", "Yemen, Republic of",
     "Zambia", "Zimbabwe"
   ),
   region = c(
-    "SouthAsia", "Europe&CentralAsia",
-    "SouthAsia", "Sub-SaharanAfrica",
-    "SouthAsia", "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica", "Sub-SaharanAfrica",
-    "EastAsia&Pacific",
-    "Sub-SaharanAfrica", "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica", "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica", "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica",
-    "MiddleEast&NorthAfrica", "LatinAmerica&Caribbean",
-    "Sub-SaharanAfrica", "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica",
-    "Europe&CentralAsia", "Sub-SaharanAfrica",
-    "LatinAmerica&Caribbean", "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica",
-    "LatinAmerica&Caribbean", "LatinAmerica&Caribbean",
-    "LatinAmerica&Caribbean",
-    "Sub-SaharanAfrica", "EastAsia&Pacific",
-    "Europe&CentralAsia", "EastAsia&Pacific",
-    "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica", "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica", "SouthAsia",
-    "Sub-SaharanAfrica", "EastAsia&Pacific",
-    "Sub-SaharanAfrica", "EastAsia&Pacific",
-    "Europe&CentralAsia", "EastAsia&Pacific",
-    "Sub-SaharanAfrica",
-    "EastAsia&Pacific", "SouthAsia",
-    "LatinAmerica&Caribbean", "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica", "SouthAsia",
-    "EastAsia&Pacific", "Sub-SaharanAfrica",
-    "EastAsia&Pacific", "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica", "Sub-SaharanAfrica",
-    "EastAsia&Pacific",
-    "Sub-SaharanAfrica", "Sub-SaharanAfrica",
-    "LatinAmerica&Caribbean",
-    "LatinAmerica&Caribbean", "Sub-SaharanAfrica",
-    "Europe&CentralAsia", "Sub-SaharanAfrica",
-    "EastAsia&Pacific", "Sub-SaharanAfrica",
-    "EastAsia&Pacific",
-    "EastAsia&Pacific", "Sub-SaharanAfrica",
-    "Europe&CentralAsia", "EastAsia&Pacific",
-    "EastAsia&Pacific",
-    "MiddleEast&NorthAfrica", "Sub-SaharanAfrica",
-    "Sub-SaharanAfrica"
+    "South Asia", "Europe & Central Asia",
+    "South Asia", "Sub-Saharan Africa",
+    "South Asia", "Sub-Saharan Africa",
+    "Sub-Saharan Africa", "Sub-Saharan Africa",
+    "East Asia & Pacific",
+    "Sub-Saharan Africa", "Sub-Saharan Africa",
+    "Sub-Saharan Africa", "Sub-Saharan Africa",
+    "Sub-Saharan Africa", "Sub-Saharan Africa",
+    "Sub-Saharan Africa",
+    "Middle East & North Africa", "Latin America & Caribbean",
+    "Sub-Saharan Africa", "Sub-Saharan Africa",
+    "Sub-Saharan Africa",
+    "Europe & Central Asia", "Sub-Saharan Africa",
+    "Latin America & Caribbean", "Sub-Saharan Africa",
+    "Sub-Saharan Africa",
+    "Latin America & Caribbean", "Latin America & Caribbean",
+    "Latin America & Caribbean",
+    "Sub-Saharan Africa", "East Asia & Pacific",
+    "Europe & Central Asia", "East Asia & Pacific",
+    "Sub-Saharan Africa",
+    "Sub-Saharan Africa", "Sub-Saharan Africa",
+    "Sub-Saharan Africa", "South Asia",
+    "Sub-Saharan Africa", "East Asia & Pacific",
+    "Sub-Saharan Africa", "East Asia & Pacific",
+    "Europe & Central Asia", "East Asia & Pacific",
+    "Sub-Saharan Africa",
+    "East Asia & Pacific", "South Asia",
+    "Latin America & Caribbean", "Sub-Saharan Africa",
+    "Sub-Saharan Africa", "South Asia",
+    "East Asia & Pacific", "Sub-Saharan Africa",
+    "East Asia & Pacific", "Sub-Saharan Africa",
+    "Sub-Saharan Africa", "Sub-Saharan Africa",
+    "East Asia & Pacific",
+    "Sub-Saharan Africa", "Sub-Saharan Africa",
+    "Latin America & Caribbean",
+    "Latin America & Caribbean", "Sub-Saharan Africa",
+    "Europe & Central Asia", "Sub-Saharan Africa",
+    "East Asia & Pacific", "Sub-Saharan Africa",
+    "East Asia & Pacific",
+    "East Asia & Pacific", "Sub-Saharan Africa",
+    "Europe & Central Asia", "East Asia & Pacific",
+    "East Asia & Pacific",
+    "Middle East & North Africa", "Sub-Saharan Africa",
+    "Sub-Saharan Africa"
   ),
   income_group = c(
-    "Lowincome", "Uppermiddleincome",
-    "Lowermiddleincome",
-    "Lowermiddleincome", "Lowermiddleincome",
-    "Lowincome", "Lowincome", "Lowermiddleincome",
-    "Lowermiddleincome",
-    "Lowermiddleincome", "Lowincome", "Lowincome",
-    "Lowermiddleincome", "Lowincome",
-    "Lowermiddleincome", "Lowermiddleincome",
-    "Lowermiddleincome",
-    "Uppermiddleincome", "Lowincome", "Lowincome",
-    "Lowincome", "Uppermiddleincome",
-    "Lowermiddleincome", "Uppermiddleincome",
-    "Lowincome", "Lowincome",
-    "Uppermiddleincome", "Lowermiddleincome",
-    "Lowermiddleincome", "Lowermiddleincome",
-    "Lowermiddleincome", "Lowermiddleincome",
-    "Lowermiddleincome",
-    "Lowermiddleincome", "Lowincome", "Lowincome",
-    "Lowincome", "Uppermiddleincome",
-    "Lowincome", "Uppermiddleincome",
-    "Lowermiddleincome", "Lowermiddleincome",
-    "Uppermiddleincome", "Lowermiddleincome",
-    "Lowincome", "Lowermiddleincome",
-    "Lowermiddleincome",
-    "Lowermiddleincome", "Lowincome", "Lowermiddleincome",
-    "Lowermiddleincome",
-    "Lowermiddleincome", "Lowincome",
-    "Lowermiddleincome", "Lowermiddleincome",
-    "Lowermiddleincome", "Lowincome",
-    "Lowermiddleincome", "Lowincome", "Lowincome",
-    "Uppermiddleincome", "Uppermiddleincome",
-    "Lowincome", "Lowermiddleincome",
-    "Lowermiddleincome",
-    "Lowermiddleincome", "Lowincome", "Uppermiddleincome",
-    "Uppermiddleincome", "Lowincome",
-    "Lowermiddleincome",
-    "Lowermiddleincome", "Lowermiddleincome", "Lowincome",
-    "Lowermiddleincome",
-    "Lowermiddleincome"
+    "Low income", "Upper middle income",
+    "Lower middle income",
+    "Lower middle income", "Lower middle income",
+    "Low income", "Low income", "Lower middle income",
+    "Lower middle income",
+    "Lower middle income", "Low income", "Low income",
+    "Lower middle income", "Low income",
+    "Lower middle income", "Lower middle income",
+    "Lower middle income",
+    "Upper middle income", "Low income", "Low income",
+    "Low income", "Upper middle income",
+    "Lower middle income", "Upper middle income",
+    "Low income", "Low income",
+    "Upper middle income", "Lower middle income",
+    "Lower middle income", "Lower middle income",
+    "Lower middle income", "Lower middle income",
+    "Lower middle income",
+    "Lower middle income", "Low income", "Low income",
+    "Low income", "Upper middle income",
+    "Low income", "Upper middle income",
+    "Lower middle income", "Lower middle income",
+    "Upper middle income", "Lower middle income",
+    "Low income", "Lower middle income",
+    "Lower middle income",
+    "Lower middle income", "Low income", "Lower middle income",
+    "Lower middle income",
+    "Lower middle income", "Low income",
+    "Lower middle income", "Lower middle income",
+    "Lower middle income", "Low income",
+    "Lower middle income", "Low income", "Low income",
+    "Upper middle income", "Upper middle income",
+    "Low income", "Lower middle income",
+    "Lower middle income",
+    "Lower middle income", "Low income", "Upper middle income",
+    "Upper middle income", "Low income",
+    "Lower middle income",
+    "Lower middle income", "Lower middle income", "Low income",
+    "Lower middle income",
+    "Lower middle income"
   ),
   pcfc = c(
     1L, 0L, 0L, 0L, 0L, 1L, 1L, 0L, 0L,
@@ -357,6 +360,339 @@ lapply(seq_along(wb_names), function(j) {
 })
 
 # 2. Modify templates according to business requirement doc ----
+
+## GPE2025_indicator_1 ----
+
+# rm(wb)
+
+# Load workbook and set parameters
+i <- 1 # Workbook sequence
+j <- 6 # Start Column of new data
+
+wb <- loadWorkbook(here(
+  folder_structure[i],
+  paste0(wb_names[i],
+         ".xlsx",
+         sep = ""
+  )
+), )
+
+# Add new columns
+
+data <- data.frame(
+  "indi_1_yr_comp" = numeric(),
+  "ind_1_yr_free" = numeric(),
+  "indi_1" = numeric(),
+  "data_year" = numeric()
+)
+
+writeData(wb,
+          sheet = sheet_names[1], data,
+          colNames = TRUE, xy = c(j, 1),
+          headerStyle = hs1
+) ## black border + bold header
+
+# Save workbook with new columns
+
+saveWorkbook(wb,
+             file = here(
+               folder_structure[i],
+               paste0(wb_names[i],
+                      ".xlsx",
+                      sep = ""
+               )
+             ),
+             overwrite = TRUE
+)
+rm(data)
+
+## GPE2025_indicator_3i ----
+
+# rm(wb)
+
+# Load workbook and set parameters
+i <- 3 # Workbook sequence
+j <- 6 # Start Column of new data
+
+wb <- loadWorkbook(here(
+  folder_structure[i],
+  paste0(wb_names[i],
+         ".xlsx",
+         sep = ""
+  )
+), )
+
+# Add new columns
+
+data <- data.frame(
+     "indi_3ia" = numeric(),
+     "indi_3ia_f" = numeric(),
+     "indi_3ia_m" = numeric(),
+     "indi_3ib" = numeric(),
+     "indi_3ib_f" = numeric(),
+     "indi_3ib_m" = numeric(),
+     "data_year_3ia" = numeric(),
+     "data_year_3ib" = numeric()
+      )
+
+writeData(wb,
+          sheet = sheet_names[1], data,
+          colNames = TRUE, xy = c(j, 1),
+          headerStyle = hs1
+) ## black border + bold header
+
+# Save workbook with new columns
+
+saveWorkbook(wb,
+             file = here(
+               folder_structure[i],
+               paste0(wb_names[i],
+                      ".xlsx",
+                      sep = ""
+               )
+             ),
+             overwrite = TRUE
+)
+rm(data)
+
+## GPE2025_indicator_3ii ----
+
+# rm(wb)
+
+# Load workbook and set parameters
+i <- 4 # Workbook sequence
+j <- 6 # Start Column of new data
+
+wb <- loadWorkbook(here(
+  folder_structure[i],
+  paste0(wb_names[i],
+         ".xlsx",
+         sep = ""
+  )
+), )
+
+# Add new columns
+
+data <- data.frame(
+  "indi_3iia" = numeric(),
+  "indi_3iia_f" = numeric(),
+  "indi_3iia_m" = numeric(),
+  "indi_3iia_rural" = numeric(),
+  "indi_3iia_poor" = numeric(),
+  "indi_3iib" = numeric(),
+  "indi_3iib_f" = numeric(),
+  "indi_3iib_m" = numeric(),
+  "indi_3iib_rural" = numeric(),
+  "indi_3iib_poor" = numeric(),
+  "indi_3iic" = numeric(),
+  "indi_3iic_f" = numeric(),
+  "indi_3iic_m" = numeric(),
+  "indi_3iic_rural" = numeric(),
+  "indi_3iic_poor" = numeric(),
+  "data_year" = numeric()
+)
+
+writeData(wb,
+          sheet = sheet_names[1], data,
+          colNames = TRUE, xy = c(j, 1),
+          headerStyle = hs1
+) ## black border + bold header
+
+# Save workbook with new columns
+
+saveWorkbook(wb,
+             file = here(
+               folder_structure[i],
+               paste0(wb_names[i],
+                      ".xlsx",
+                      sep = ""
+               )
+             ),
+             overwrite = TRUE
+)
+rm(data)
+
+## GPE2025_indicator_4i ----
+
+# rm(wb)
+
+# Load workbook and set parameters
+i <- 5 # Workbook sequence
+j <- 6 # Start Column of new data
+
+wb <- loadWorkbook(here(
+  folder_structure[i],
+  paste0(wb_names[i],
+         ".xlsx",
+         sep = ""
+  )
+), )
+
+# Add new columns
+
+data <- data.frame(
+  "Indi_4i_base" = numeric(),
+  "Indi_4i_current" = numeric(),
+  "Indi_4i_a" = numeric(),
+  "Indi_4i_b" = numeric(),
+  "Indi_4i" = numeric()
+)
+
+writeData(wb,
+          sheet = sheet_names[1], data,
+          colNames = TRUE, xy = c(j, 1),
+          headerStyle = hs1
+) ## black border + bold header
+
+# Save workbook with new columns
+
+saveWorkbook(wb,
+             file = here(
+               folder_structure[i],
+               paste0(wb_names[i],
+                      ".xlsx",
+                      sep = ""
+               )
+             ),
+             overwrite = TRUE
+)
+rm(data)
+
+## GPE2025_Indicator_4iia_5iia,c_8iia,c_8iiia ----
+
+rm(wb)
+
+# Load workbook and set parameters
+i <- 6 # Workbook sequence
+j <- 6 # Start Column of new data
+
+wb <- loadWorkbook(here(
+  folder_structure[i],
+  paste0(wb_names[i],
+         ".xlsx",
+         sep = ""
+  )
+), )
+
+# Add new columns
+
+data <- data.frame(
+  "entity" = numeric(),
+  "indi_4iia" = numeric(),
+  "indi_4iia_priority" = numeric(),
+  "indi_5iia" = numeric(),
+  "indi_5iia_priority" = numeric(),
+  "indi_5iic" = numeric(),
+  "indi_8iia" = numeric(),
+  "indi_8iia_priority" = numeric(),
+  "indi_8iic" = numeric(),
+  "indi_8iiia" = numeric(),
+  "indi_8iiia_priority" = numeric()
+)
+
+
+writeData(wb,
+          sheet = sheet_names[1], data,
+          colNames = TRUE, xy = c(j, 1),
+          headerStyle = hs1
+) ## black border + bold header
+
+# Add new sheets and columns
+
+addWorksheet(wb = wb, sheetName = "Tool_ITAP")
+data_1 <- data.frame(NULL)
+
+writeData(wb,
+          sheet = "Tool_ITAP", data_1,
+          colNames = TRUE, xy = c(1, 1),
+          headerStyle = hs1
+) ## black border + bold header
+
+
+addWorksheet(wb = wb, sheetName = "ref_iso")
+data_4 <- data.frame(
+  "country" = character(),
+  "Iso" = character()
+)
+
+writeData(wb,
+          sheet = "ref_iso", data_4,
+          colNames = TRUE, xy = c(1, 1),
+          headerStyle = hs1
+) ## black border + bold header
+
+# Worksheet order
+
+worksheetOrder(wb)
+names(wb)
+worksheetOrder(wb) <- c(6, 1, 2, 3, 7, 4, 5)
+
+# Save workbook with new columns and sheets, and template name
+
+saveWorkbook(wb,
+             file = here(
+               folder_structure[i],
+               paste0("ITAP tool for RF indicator ", wb_names[i],
+                      ".xlsx",
+                      sep = ""
+               )
+             ),
+             overwrite = TRUE
+)
+
+rm(data, data_1, data_4)
+file.remove(here(
+  folder_structure[i],
+  paste0(wb_names[i],
+         ".xlsx",
+         sep = ""
+  )
+))
+
+## GPE2025_indicator_5i ----
+
+# rm(wb)
+
+# Load workbook and set parameters
+i <- 8 # Workbook sequence
+j <- 6 # Start Column of new data
+
+wb <- loadWorkbook(here(
+  folder_structure[i],
+  paste0(wb_names[i],
+         ".xlsx",
+         sep = ""
+  )
+), )
+
+# Add new columns
+
+data <- data.frame(
+     "indi_5i" = numeric(),
+     "indi_5i_pop" = numeric(),
+     "data_year" = numeric()
+)
+
+writeData(wb,
+          sheet = sheet_names[1], data,
+          colNames = TRUE, xy = c(j, 1),
+          headerStyle = hs1
+) ## black border + bold header
+
+# Save workbook with new columns
+
+saveWorkbook(wb,
+             file = here(
+               folder_structure[i],
+               paste0(wb_names[i],
+                      ".xlsx",
+                      sep = ""
+               )
+             ),
+             overwrite = TRUE
+)
+rm(data)
+
 
 ## GPE2025_indicator_6 ----
 
@@ -537,97 +873,6 @@ saveWorkbook(wb,
 )
 
 rm(data)
-
-## GPE2025_Indicator_4iia_5iia,c_8iia,c_8iiia ----
-
-rm(wb)
-
-# Load workbook and set parameters
-i <- 6 # Workbook sequence
-j <- 6 # Start Column of new data
-
-wb <- loadWorkbook(here(
-  folder_structure[i],
-  paste0(wb_names[i],
-         ".xlsx",
-         sep = ""
-  )
-), )
-
-# Add new columns
-
-data <- data.frame(
-  "entity" = numeric(),
-  "indi_4iia" = numeric(),
-  "indi_4iia_priority" = numeric(),
-  "indi_5iia" = numeric(),
-  "indi_5iia_priority" = numeric(),
-  "indi_5iic" = numeric(),
-  "indi_8iia" = numeric(),
-  "indi_8iia_priority" = numeric(),
-  "indi_8iic" = numeric(),
-  "indi_8iiia" = numeric(),
-  "indi_8iiia_priority" = numeric()
-)
-
-
-writeData(wb,
-          sheet = sheet_names[1], data,
-          colNames = TRUE, xy = c(j, 1),
-          headerStyle = hs1
-) ## black border + bold header
-
-# Add new sheets and columns
-
-addWorksheet(wb = wb, sheetName = "Tool_ITAP")
-data_1 <- data.frame(NULL)
-
-writeData(wb,
-          sheet = "Tool_ITAP", data_1,
-          colNames = TRUE, xy = c(1, 1),
-          headerStyle = hs1
-) ## black border + bold header
-
-
-addWorksheet(wb = wb, sheetName = "ref_iso")
-data_4 <- data.frame(
-  "country" = character(),
-  "Iso" = character()
-)
-
-writeData(wb,
-          sheet = "ref_iso", data_4,
-          colNames = TRUE, xy = c(1, 1),
-          headerStyle = hs1
-) ## black border + bold header
-
-# Worksheet order
-
-worksheetOrder(wb)
-names(wb)
-worksheetOrder(wb) <- c(6, 1, 2, 3, 7, 4, 5)
-
-# Save workbook with new columns and sheets, and template name
-
-saveWorkbook(wb,
-             file = here(
-               folder_structure[i],
-               paste0("ITAP tool for RF indicator ", wb_names[i],
-                      ".xlsx",
-                      sep = ""
-               )
-             ),
-             overwrite = TRUE
-)
-
-rm(data, data_1, data_4)
-file.remove(here(
-  folder_structure[i],
-  paste0(wb_names[i],
-         ".xlsx",
-         sep = ""
-  )
-))
 
 ## GPE2025_Indicator_8iiic ----
 
@@ -943,5 +1188,7 @@ rm(data, data_1, data_2)
 
 # Create a Readme file
 #file.create("README.text")
+
+
 
 
